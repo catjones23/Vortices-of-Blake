@@ -1,0 +1,209 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 10%;
+    background-color: #fff;
+    animation: screenChange;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+.container {
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+}
+
+.container div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scale(0);
+}
+
+    .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(0);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: grow 3s ease forwards;
+}
+
+.circle1 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: grow1 3s ease 0s forwards;
+}
+
+.circle2 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: grow2 3s ease 1s forwards;
+}
+
+.circle3 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: grow3 3s ease 2s forwards;
+}
+
+.circle4 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: grow4 3s ease 3s forwards;
+}
+
+.circle5 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: grow5 3s ease 4s forwards;
+}
+
+.circle6 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: grow6 3s ease 5s forwards;
+}
+
+.circle7 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: grow7 3s ease 6s forwards;
+}
+
+.circle8 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: grow8 3s ease 7s forwards;
+}
+
+.circle9 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: grow9 3s ease 8s forwards;
+}
+
+.circle10 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: grow10 3s ease 9s forwards;
+}
+
+@keyframes grow1 {
+    100% {
+        background-image: url("../images/circle1.png");
+        opacity: 1;
+        transform: scale(2.6);
+    }
+}
+
+@keyframes grow2 {
+    100% {
+        background-image: url("../images/circle2.png");
+        opacity: 1;
+        transform: scale(2.4);
+    }
+}
+
+@keyframes grow3 {
+    100% {
+        background-image: url("../images/circle3.png");
+        opacity: 1;
+        transform: scale(2.2);
+    }
+}
+
+@keyframes grow4 {
+    100% {
+        background-image: url("../images/circle4.png");
+        opacity: 1;
+        transform: scale(2);
+    }
+}
+
+@keyframes grow5 {
+    100% {
+        background-image: url("../images/circle5.png");
+        opacity: 1;
+        transform: scale(1.8);
+    }
+}
+
+@keyframes grow6 {
+    100% {
+        background-image: url("../images/circle6.png");
+        opacity: 1;
+        transform: scale(1.6);
+    }
+}
+
+@keyframes grow7 {
+    100% {
+        background-image: url("../images/circle7.png");
+        opacity: 1;
+        transform: scale(1.4);
+    }
+}
+
+@keyframes grow8 {
+    100% {
+        background-image: url("../images/circle8.png");
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes grow9 {
+    100% {
+        background-image: url("../images/circle9.png");
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes grow10 {
+    100% {
+        background-image: url("../images/circle10.png");
+        opacity: 1;
+        transform: scale(0.8);
+    }
+}
+
+@keyframes screenChange {
+    0% {
+        height: 100vh;
+    }
+
+    100% {
+        height: 700vh;
+        width: 200vh;
+    }
+}
+
+/*@keyframes spin {
+    0% {
+        transform: rotate(0deg) translateX(0px) translateY(0px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(0px) translateY(0px) rotate(360deg);
+    }
+} */

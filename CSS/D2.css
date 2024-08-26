@@ -1,0 +1,428 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    gap: 1px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.checkbox {
+    display: none;
+}
+
+.grid-item {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.img1 {
+    background-image: url('../images/bow4.png');
+}
+
+.img2 {
+    background-image: url('../images/my3.png');
+}
+
+.img3 {
+    background-image: url('../images/me2.png');
+}
+
+.img4 {
+    background-image: url('../images/of5.png');
+}
+
+.img5 {
+    background-image: url('../images/gold7.png');
+}
+
+.img6 {
+    background-image: url('../images/bring1.png');
+}
+
+.img7 {
+    background-image: url('../images/burning6.png');
+}
+
+.img8 {
+    background-image: url('../images/desire6.png');
+}
+
+.img9 {
+    background-image: url('../images/arrows4.png');
+}
+
+.img10 {
+    background-image: url('../images/my3.png');
+}
+
+.img11 {
+    background-image: url('../images/bring1.png');
+}
+
+.img12 {
+    background-image: url('../images/of5.png');
+}
+
+.img13 {
+    background-image: url('../images/me2.png');
+}
+
+.img14 {
+    background-image: url('../images/O5.png');
+}
+
+.img15 {
+    background-image: url('../images/spear4.png');
+}
+
+.img16 {
+    background-image: url('../images/unfold7.png');
+}
+
+.img17 {
+    background-image: url('../images/my3.png');
+}
+
+.img18 {
+    background-image: url('../images/clouds6.png');
+}
+
+.img19 {
+    background-image: url('../images/bring1.png');
+}
+
+.img20 {
+    background-image: url('../images/me2.png');
+}
+
+.img21 {
+    background-image: url('../images/my3.png');
+}
+
+.img22 {
+    background-image: url('../images/me2.png');
+}
+
+.img23 {
+    background-image: url('../images/fire6.png');
+}
+
+.img24 {
+    background-image: url('../images/of5.png');
+}
+
+.img25 {
+    background-image: url('../images/chariot4.png');
+}
+
+.img26 {
+    background-image: url('../images/bring1.png');
+}
+
+/* Define keyframes to swap positions */
+@keyframes swap1-4 {
+    0% { grid-column: 1; grid-row: 1; }
+    25% { transform: translate(50px, -100px) rotate(45deg); }
+    50% { transform: translate(200px, -50px) rotate(-45deg); }
+    75% { transform: translate(100px, 150px) rotate(90deg); }
+    100% { grid-column: 4; grid-row: 1; }
+}
+
+@keyframes swap2-3 {
+    0% { grid-column: 2; grid-row: 1; }
+    25% { transform: translate(-50px, 50px) rotate(-30deg); }
+    50% { transform: translate(50px, -100px) rotate(60deg); }
+    75% { transform: translate(-100px, 50px) rotate(-90deg); }
+    100% { grid-column: 3; grid-row: 1; }
+}
+
+@keyframes swap3-2 {
+    0% { grid-column: 3; grid-row: 1; }
+    25% { transform: translate(50px, -50px) rotate(60deg); }
+    50% { transform: translate(-50px, 50px) rotate(-60deg); }
+    75% { transform: translate(100px, 100px) rotate(120deg); }
+    100% { grid-column: 2; grid-row: 1; }
+}
+
+@keyframes swap4-5 {
+    0% { grid-column: 4; grid-row: 1; }
+    25% { transform: translate(50px, 50px) rotate(45deg); }
+    50% { transform: translate(-50px, 100px) rotate(-45deg); }
+    75% { transform: translate(100px, -50px) rotate(90deg); }
+    100% { grid-column: 5; grid-row: 1; }
+}
+
+@keyframes swap5-7 {
+    0% { grid-column: 5; grid-row: 1; }
+    25% { transform: translate(-50px, 50px) rotate(-30deg); }
+    50% { transform: translate(50px, -100px) rotate(60deg); }
+    75% { transform: translate(-100px, 50px) rotate(-90deg); }
+    100% { grid-column: 7; grid-row: 1; }
+}
+
+@keyframes swap6-1 {
+    0% { grid-column: 6; grid-row: 1; }
+    25% { transform: translate(50px, -50px) rotate(60deg); }
+    50% { transform: translate(-50px, 50px) rotate(-60deg); }
+    75% { transform: translate(100px, 100px) rotate(120deg); }
+    100% { grid-column: 1; grid-row: 1; }
+}
+
+@keyframes swap7-6 {
+    0% { grid-column: 7; grid-row: 1; }
+    25% { transform: translate(50px, 50px) rotate(45deg); }
+    50% { transform: translate(-50px, 100px) rotate(-45deg); }
+    75% { transform: translate(100px, -50px) rotate(90deg); }
+    75% { transform: translate(100px, -50px) rotate(90deg); }
+    100% { grid-column: 6; grid-row: 1; }
+}
+
+@keyframes swap1-6 {
+    0% { grid-column: 1; grid-row: 1; }
+    25% { transform: translate(50px, 50px) rotate(45deg); }
+    50% { transform: translate(-50px, 100px) rotate(-45deg); }
+    75% { transform: translate(100px, -50px) rotate(90deg); }
+    75% { transform: translate(100px, -50px) rotate(90deg); }
+    100% { grid-column: 6; grid-row: 1; }
+}
+
+@keyframes swap2-4 {
+    0% { grid-column: 2; grid-row: 1; }
+    25% { transform: translate(50px, -100px) rotate(45deg); }
+    50% { transform: translate(200px, -50px) rotate(-45deg); }
+    75% { transform: translate(100px, 150px) rotate(90deg); }
+    100% { grid-column: 4; grid-row: 1; }
+}
+
+@keyframes swap3-3 {
+    0% { grid-column: 3; grid-row: 1; }
+    25% { transform: translate(-50px, 50px) rotate(-30deg); }
+    50% { transform: translate(50px, -100px) rotate(60deg); }
+    75% { transform: translate(-100px, 50px) rotate(-90deg); }
+    100% { grid-column: 3; grid-row: 1; }
+}
+
+@keyframes swap4-1 {
+    0% { grid-column: 4; grid-row: 1; }
+    25% { transform: translate(50px, 50px) rotate(45deg); }
+    50% { transform: translate(-50px, 100px) rotate(-45deg); }
+    75% { transform: translate(100px, -50px) rotate(90deg); }
+    100% { grid-column: 1; grid-row: 1; }
+}
+
+@keyframes swap5-5 {
+    0% { grid-column: 5; grid-row: 1; }
+    25% { transform: translate(50px, 50px) rotate(45deg); }
+    50% { transform: translate(-50px, 100px) rotate(-45deg); }
+    75% { transform: translate(100px, -50px) rotate(90deg); }
+    100% { grid-column: 5; grid-row: 1; }
+}
+
+@keyframes swap6-2 {
+    0% { grid-column: 6; grid-row: 1; }
+    25% { transform: translate(50px, 50px) rotate(45deg); }
+    50% { transform: translate(-50px, 100px) rotate(-45deg); }
+    75% { transform: translate(100px, -50px) rotate(90deg); }
+    75% { transform: translate(100px, -50px) rotate(90deg); }
+    100% { grid-column: 2; grid-row: 1; }
+}
+
+@keyframes swap1-5 {
+    0% { grid-column: 1; grid-row: 1; }
+    25% { transform: translate(50px, -100px) rotate(45deg); }
+    50% { transform: translate(200px, -50px) rotate(-45deg); }
+    75% { transform: translate(100px, 150px) rotate(90deg); }
+    100% { grid-column: 5; grid-row: 1; }
+}
+
+@keyframes swap2-4 {
+    0% { grid-column: 2; grid-row: 1; }
+    25% { transform: translate(-50px, 50px) rotate(-30deg); }
+    50% { transform: translate(50px, -100px) rotate(60deg); }
+    75% { transform: translate(-100px, 50px) rotate(-90deg); }
+    100% { grid-column: 4; grid-row: 1; }
+}
+
+@keyframes swap3-7 {
+    0% { grid-column: 3; grid-row: 1; }
+    25% { transform: translate(50px, -50px) rotate(60deg); }
+    50% { transform: translate(-50px, 50px) rotate(-60deg); }
+    75% { transform: translate(100px, 100px) rotate(120deg); }
+    100% { grid-column: 7; grid-row: 1; }
+}
+
+@keyframes swap4-3 {
+    0% { grid-column: 4; grid-row: 1; }
+    25% { transform: translate(50px, 50px) rotate(45deg); }
+    50% { transform: translate(-50px, 100px) rotate(-45deg); }
+    75% { transform: translate(100px, -50px) rotate(90deg); }
+    100% { grid-column: 3; grid-row: 1; }
+}
+
+@keyframes swap5-6 {
+    0% { grid-column: 5; grid-row: 1; }
+    25% { transform: translate(-50px, 50px) rotate(-30deg); }
+    50% { transform: translate(50px, -100px) rotate(60deg); }
+    75% { transform: translate(-100px, 50px) rotate(-90deg); }
+    100% { grid-column: 6; grid-row: 1; }
+}
+
+@keyframes swap6-1 {
+    0% { grid-column: 6; grid-row: 1; }
+    25% { transform: translate(-50px, 50px) rotate(-30deg); }
+    50% { transform: translate(50px, -100px) rotate(60deg); }
+    75% { transform: translate(-100px, 50px) rotate(-90deg); }
+    100% { grid-column: 1; grid-row: 1; }
+}
+
+@keyframes swap7-2 {
+    0% { grid-column: 7; grid-row: 1; }
+    25% { transform: translate(50px, 50px) rotate(45deg); }
+    50% { transform: translate(-50px, 100px) rotate(-45deg); }
+    75% { transform: translate(100px, -50px) rotate(90deg); }
+    100% { grid-column: 2; grid-row: 1; }
+}
+
+@keyframes swap1-3 {
+    0% { grid-column: 1; grid-row: 1; }
+    25% { transform: translate(50px, 50px) rotate(45deg); }
+    50% { transform: translate(-50px, 100px) rotate(-45deg); }
+    75% { transform: translate(100px, -50px) rotate(90deg); }
+    100% { grid-column: 3; grid-row: 1; }
+}
+
+@keyframes swap2-2 {
+    0% { grid-column: 2; grid-row: 1; }
+    25% { transform: translate(50px, 50px) rotate(45deg); }
+    50% { transform: translate(-50px, 100px) rotate(-45deg); }
+    75% { transform: translate(100px, -50px) rotate(90deg); }
+    75% { transform: translate(100px, -50px) rotate(90deg); }
+    100% { grid-column: 2; grid-row: 1; }
+}
+
+@keyframes swap3-6 {
+    0% { grid-column: 3; grid-row: 1; }
+    25% { transform: translate(50px, 50px) rotate(45deg); }
+    50% { transform: translate(-50px, 100px) rotate(-45deg); }
+    75% { transform: translate(100px, -50px) rotate(90deg); }
+    75% { transform: translate(100px, -50px) rotate(90deg); }
+    100% { grid-column: 6; grid-row: 1; }
+}
+
+@keyframes swap5-4 {
+    0% { grid-column: 5; grid-row: 1; }
+    25% { transform: translate(50px, 50px) rotate(45deg); }
+    50% { transform: translate(-50px, 100px) rotate(-45deg); }
+    75% { transform: translate(100px, -50px) rotate(90deg); }
+    100% { grid-column: 4; grid-row: 1; }
+}
+
+/* Apply animations on click using :checked pseudo-class */
+#img1:checked ~ .img1 {
+    animation: swap1-4 3s forwards;
+}
+
+#img2:checked ~ .img2 {
+    animation: swap2-3 3s forwards;
+}
+
+#img3:checked ~ .img3 {
+    animation: swap3-2 3s forwards;
+}
+
+#img4:checked ~ .img4 {
+    animation: swap4-5 3s forwards;
+}
+
+#img5:checked ~ .img5 {
+    animation: swap5-7 3s forwards;
+}
+
+#img6:checked ~ .img6 {
+    animation: swap6-1 3s forwards;
+}
+
+#img7:checked ~ .img7 {
+    animation: swap7-6 3s forwards;
+}
+
+#img8:checked ~ .img8 {
+    animation: swap1-6 3s forwards;
+}
+
+#img9:checked ~ .img9 {
+    animation: swap2-4 3s forwards;
+}
+
+#img10:checked ~ .img10 {
+    animation: swap3-3 3s forwards;
+}
+
+#img11:checked ~ .img11 {
+    animation: swap4-1 3s forwards;
+}
+
+#img12:checked ~ .img12 {
+    animation: swap5-5 3s forwards;
+}
+
+#img13:checked ~ .img13 {
+    animation: swap6-2 3s forwards;
+}
+
+#img14:checked ~ .img14 {
+    animation: swap1-5 3s forwards;
+}
+
+#img15:checked ~ .img15 {
+    animation: swap2-4 3s forwards;
+}
+
+#img16:checked ~ .img16 {
+    animation: swap3-7 3s forwards;
+}
+
+#img17:checked ~ .img17 {
+    animation: swap4-3 3s forwards;
+}
+
+#img18:checked ~ .img18 {
+    animation: swap5-6 3s forwards;
+}
+
+#img19:checked ~ .img19 {
+    animation: swap6-1 3s forwards;
+}
+
+#img20:checked ~ .img20 {
+    animation: swap7-2 3s forwards;
+}
+
+#img21:checked ~ .img21 {
+    animation: swap1-3 3s forwards;
+}
+
+#img22:checked ~ .img22 {
+    animation: swap2-2 3s forwards;
+}
+
+#img23:checked ~ .img23 {
+    animation: swap3-6 3s forwards;
+}
+
+#img24:checked ~ .img24 {
+    animation: swap4-5 3s forwards;
+}
+
+#img25:checked ~ .img25 {
+    animation: swap5-4 3s forwards;
+}
+
+#img26:checked ~ .img26 {
+    animation: swap6-1 3s forwards;
+}

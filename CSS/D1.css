@@ -10,6 +10,9 @@ body, html {
     overflow: hidden;
 }
 
+/* positions the square centrally on the page and defines which animation acts on the square
+(shapChange). Gives other details about the animation such as its delay, duration, 
+timing-function, and fill-mode. */
 .square {
     width: 70px;
     height: 70px;
@@ -26,6 +29,7 @@ body, html {
     animation-fill-mode: forwards;
 }
 
+/* positions the text inside the discs.*/
 .text {
     background-image: url('../images/signifier.png');
     position: absolute;
@@ -46,17 +50,20 @@ body, html {
     background-size: cover;
 }
 
+/* States what animation acts on the blue disc (moveHorizontally1)*/
 .circle1 {
     background-image: url('../images/sigBlue.png');
     animation: moveHorizontally1 6s linear forwards, orbitAroundCentre 6s linear 6s infinite;
 }
 
+/* States what animation acts on the red disc (moveHorizontally2)*/
 .circle2 {
     opacity: 0;
     background-image: url('../images/sigRed.png');
     animation: moveHorizontally2 6s linear 2.5s forwards, orbitAroundCentre 6s linear 8.5s infinite;
 }
 
+/* defines the animation that moves the blue disc from left to right*/
 @keyframes moveHorizontally1 {
     0% {
         left: -200px;
@@ -68,6 +75,8 @@ body, html {
     }
 }
 
+
+/* defines the animation that moves the red disc from right to left*/
 @keyframes moveHorizontally2 {
     0% {
         opacity: 100%;
@@ -81,6 +90,7 @@ body, html {
     }
 }
 
+/* defines the animation that makes the discs orbit around the centre square. */
 @keyframes orbitAroundCentre {
     0% {
         opacity: 100%;
@@ -92,6 +102,7 @@ body, html {
     }
 }
 
+/* defines the animation that causes the central square to change into a purple circle. */
 @keyframes shapeChange {
     0% {
         background-color: black;

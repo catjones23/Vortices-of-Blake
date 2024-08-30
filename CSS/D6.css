@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
 }
 
 .container {
@@ -13,17 +13,20 @@ body {
     height: 300px;
 }
 
+/* Centres the cone and makes it partially transparaent so that the square transformation can be viewed behind. 
+Z-index positions the cone infront of the square.*/
 .cone {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 400px; /* Adjust based on your image size */
-    height: auto; /* Maintain aspect ratio */
+    width: 400px; 
+    height: auto; 
     opacity: 0.6;
     transform: translate(-50%, -50%);
     z-index: 2;
 }
 
+/* Sets the position and colour of the square, sets it behind the cone and assigns it an animation (moveSquare).*/
 .square {
     position: absolute;
     top: 53%;
@@ -37,6 +40,8 @@ body {
     z-index: 1;
 }
 
+/* Moves the square from right to left, softening the border radius until the square becomes a circle. 
+Changes the colour from red to blue.*/
 @keyframes moveSquare {
     0% {
         right: 0;

@@ -1,3 +1,5 @@
+
+/* sets up the position of the emerging circles.*/
 body {
     display: flex;
     justify-content: center;
@@ -25,7 +27,7 @@ body {
     opacity: 0;
     transform: scale(0);
 }
-
+/* Sets the circles as initially invisible and assigns them to their specific animations 'grow(n)'. */
     .circle {
     position: absolute;
     top: 0;
@@ -108,6 +110,7 @@ body {
     animation: grow10 3s ease 9s forwards;
 }
 
+/* Assigns each circle a background image, makes them visible, and makes them grow to varying sizes.*/
 @keyframes grow1 {
     100% {
         background-image: url("../images/circle1.png");
@@ -188,6 +191,7 @@ body {
     }
 }
 
+/* Expands the viewport width to disorientate the user.*/
 @keyframes screenChange {
     0% {
         height: 100vh;
@@ -198,12 +202,3 @@ body {
         width: 200vh;
     }
 }
-
-/*@keyframes spin {
-    0% {
-        transform: rotate(0deg) translateX(0px) translateY(0px) rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg) translateX(0px) translateY(0px) rotate(360deg);
-    }
-} */

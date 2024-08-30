@@ -1,3 +1,4 @@
+/* organises and aligns the discs*/
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
@@ -7,10 +8,13 @@
     position: relative;
 }
 
+/* makes the checkbox defined in the HTML file invisible */
 .checkbox {
     display: none;
 }
 
+/* defines the dimesions of the grids and that images of the discs will be set as backgrounds
+to cover the grid */
 .grid-item {
     width: 200px;
     height: 200px;
@@ -124,7 +128,8 @@
     background-image: url('../images/bring1.png');
 }
 
-/* Define keyframes to swap positions */
+/* The following set of keyframes define various animations that state which grid item
+should switch position with which other grid item. */
 @keyframes swap1-4 {
     0% { grid-column: 1; grid-row: 1; }
     25% { transform: translate(50px, -100px) rotate(45deg); }
@@ -322,7 +327,7 @@
     100% { grid-column: 4; grid-row: 1; }
 }
 
-/* Apply animations on click using :checked pseudo-class */
+/* Defines which animation should correspond with which grid item when clicked. */
 #img1:checked ~ .img1 {
     animation: swap1-4 3s forwards;
 }

@@ -1,9 +1,11 @@
+/* styles the index page with purple background and white body. Fonts were chosen to be inkeeping with the formatting 
+of the dissertation itself.*/
 body, html {
     width: 100%;
     height: 100%;
     background-color: #C7B1CA;
 }
- 
+
 h1, h2, h3 {
     color: #390751;
 }
